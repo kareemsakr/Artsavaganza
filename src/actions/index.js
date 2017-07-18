@@ -97,7 +97,6 @@ export function fetchPost(id){
     return dispatch => {
         var postRef = firebase.database().ref('/posts/' + id);
           postRef.once('value').then(function(snapshot) {
-            console.log(snapshot.val());
             dispatch({
                 type: FETCH_POST,
                 payload: snapshot.val()

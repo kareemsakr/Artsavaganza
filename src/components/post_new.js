@@ -25,7 +25,8 @@ class NewPost extends Component {
     return (
       <div><button 
         onClick={this.addPost.bind(this)} 
-        className="btn btn-primary">Add Post</button>
+        className="btn btn-primary"
+        >Add Post</button>
         </div>
     );
   }
