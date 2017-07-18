@@ -7,8 +7,10 @@ import PostDetail from './post_detail.js';
 import PostList from './post_list.js';
 import PostListItem from './post_list_item.js';
 import UserHome from './user_home.js';
+import PostNew from './post_new.js';
 
 
 
 
-export {Home, Header, ArtistDetail, ArtistList, PostDetail, PostList,UserHome};
+
+export {Home, Header, ArtistDetail, ArtistList, PostDetail, PostList,UserHome, PostNew};
