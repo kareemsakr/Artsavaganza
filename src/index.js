@@ -5,6 +5,14 @@ import { createStore, applyMiddleware } from 'redux';
 import {BrowserRouter, Route,Switch} from 'react-router-dom';
 import promise from 'redux-promise';
 import reduxThunk from 'redux-thunk';
+import './mystyles.css';
+import './index.css';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
+
 
 
 import {Home, Header, ArtistDetail, ArtistList, PostDetail, PostList, UserHome, PostNew} from './components/index';

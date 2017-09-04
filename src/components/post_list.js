@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import PostListItem from './post_list_item';
 
+import {  CardDeck} from 'reactstrap';
 
 class PostList extends Component {
   componentDidMount(){
@@ -12,7 +14,7 @@ class PostList extends Component {
     return _.map(this.props.posts, (post, key) => {
       //return <PostItem key={key} post={post} id={key} />
       return(
-        <div key={key}>{post.title}</div>
+        <PostListItem key={key} post={post}></PostListItem>
       );
     });
   }
@@ -23,7 +25,7 @@ class PostList extends Component {
       );
     }
     return (
-      <div>{this.renderPosts()}</div>
+      <CardDeck>{this.renderPosts()}</CardDeck>
     );
   }
 }

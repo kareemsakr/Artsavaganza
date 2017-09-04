@@ -9,3 +9,9 @@ export const UPDATE_ARTIST = 'UPDATE_ARTIST';
 export const DELETE_ARTIST = 'DELETE_ARTIST';
 export const CREATE_ARTIST = 'CREATE_ARTIST';
 
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGOUT = 'LOGOUT';
+
+
+
+
