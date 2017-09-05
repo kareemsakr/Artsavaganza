@@ -9,6 +9,7 @@ import * as actions from '../actions';
 
 class Header extends Component {
   render() {
+    //temp for testing
     this.props.login();
     return (
         <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
